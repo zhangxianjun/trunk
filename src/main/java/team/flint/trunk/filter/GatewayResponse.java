@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class GatewayResponse extends HttpServletResponseWrapper {
 
-    private ByteArrayOutputStream buffer;
+    private final ByteArrayOutputStream buffer;
 
-    private ServletOutputStream out;
+    private final ServletOutputStream out;
 
     public GatewayResponse(HttpServletResponse httpServletResponse) {
         super(httpServletResponse);
@@ -38,7 +38,7 @@ public class GatewayResponse extends HttpServletResponseWrapper {
     }
 
     class WrapperOutputStream extends ServletOutputStream {
-        private ByteArrayOutputStream bos;
+        private final ByteArrayOutputStream bos;
 
         public WrapperOutputStream(ByteArrayOutputStream bos) {
             this.bos = bos;
