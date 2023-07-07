@@ -56,8 +56,8 @@
 
     <licenses>
         <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>GNU GENERAL PUBLIC LICENSE, Version 3.0</name>
+            <url>https://www.gnu.org/licenses/lgpl-3.0.html</url>
         </license>
     </licenses>
 
@@ -72,6 +72,7 @@
         <repository>
             <id>central</id>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+
         </repository>
         <snapshotRepository>
             <id>central</id>
